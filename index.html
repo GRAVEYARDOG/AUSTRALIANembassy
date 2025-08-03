@@ -36,6 +36,32 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+<style>
+    .home-about {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .home-about .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .main-image {
+      position: relative;
+    }
+
+    .main-image video {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+
+    
+  </style>
+
 </head>
 
 <body class="index-page">
@@ -138,7 +164,7 @@
               </div>
 
               <h1 data-aos="fade-right" data-aos-delay="300">
-                Welcome to the <span class="highlight">Australian Embassy</span>
+                Welcome to <span class="highlight">Australian Embassy</span>
               </h1>
 
               <p class="hero-description" data-aos="fade-right" data-aos-delay="400">
@@ -163,7 +189,7 @@
 
               <div class="hero-actions" data-aos="fade-right" data-aos-delay="600">
                 <a href="appointment.html" class="btn btn-primary">Book Appointment</a>
-                <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="btn btn-outline glightbox">
+                <a href="https://youtu.be/6JwcR9kZs7Q?si=F_Voy1obnIUI92Sg" class="btn btn-outline glightbox">
                   <i class="bi bi-play-circle me-2"></i>
                   Embassy Tour
                 </a>
@@ -222,72 +248,86 @@
 
     </section><!-- /Hero Section -->
 
-    <!-- Home About Section -->
-    <section id="home-about" class="home-about section">
+  <!-- Home About Section -->
+  <section id="home-about" class="home-about section">
+    
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right" data-aos-delay="200">
+          <div class="about-content">
+            <h2 class="section-heading">Representing Australia Abroad</h2>
+            <p class="lead-text">For over eight decades, we've been dedicated to strengthening international relations, protecting Australian interests abroad, and providing vital consular assistance to citizens overseas.</p>
+            <p>Our embassy serves as Australia's official representation, facilitating diplomatic relations, promoting trade and investment, and supporting cultural exchange between nations.</p>
 
-        <div class="row align-items-center">
-          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right" data-aos-delay="200">
-            <div class="about-content">
-              <h2 class="section-heading">Representing Australia Abroad</h2>
-              <p class="lead-text">For over eight decades, we've been dedicated to strengthening international relations, protecting Australian interests abroad, and providing vital consular assistance to citizens overseas.</p>
-
-              <p>Our embassy serves as Australia's official representation, facilitating diplomatic relations, promoting trade and investment, and supporting cultural exchange between nations.</p>
-
-              <div class="stats-grid">
-                <div class="stat-item">
-                  <div class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="150000" data-purecounter-duration="1"></div>
-                  <div class="stat-label">Services Provided</div>
-                </div>
-                <div class="stat-item">
-                  <div class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="80" data-purecounter-duration="1"></div>
-                  <div class="stat-label">Years of Service</div>
-                </div>
-                <div class="stat-item">
-                  <div class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1"></div>
-                  <div class="stat-label">Diplomatic Staff</div>
-                </div>
+            <div class="stats-grid">
+              <div class="stat-item">
+                <div class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="150000" data-purecounter-duration="1"></div>
+                <div class="stat-label">Services Provided</div>
               </div>
-
-              <div class="cta-section">
-                <a href="about.html" class="btn-primary">Learn More About Us</a>
+              <div class="stat-item">
+                <div class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="80" data-purecounter-duration="1"></div>
+                <div class="stat-label">Years of Service</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1"></div>
+                <div class="stat-label">Diplomatic Staff</div>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
-            <div class="about-visual">
-              <div class="main-image">
-                <img src="assets/img/health/facility.jpg" alt="Embassy building" class="img-fluid">
-              </div>
-              <div class="floating-card">
-                <div class="card-content">
-                  <div class="icon">
-                    <i class="bi bi-headset"></i>
-                  </div>
-                  <div class="card-text">
-                    <h4>24/7 Emergency Assistance</h4>
-                    <p>Always here when you need us most</p>
-                  </div>
-                </div>
-              </div>
-              <div class="experience-badge">
-                <div class="badge-content">
-                  <span class="years">80+</span>
-                  <span class="text">Years of Diplomatic Service</span>
-                </div>
-              </div>
+            <div class="cta-section">
+              <a href="about.html" class="btn-primary">Learn More About Us</a>
             </div>
           </div>
         </div>
 
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+          <div class="about-visual">
+            <div class="main-image">
+              <!-- Replaced IMG with looping background video -->
+              <video
+                autoplay
+                muted
+                loop
+                playsinline
+                poster="assets/img/health/facility.jpg"
+              >
+                <source src="assets/videos/embassy-bg.mp4" type="video/mp4">
+                <!-- Optional: WebM fallback -->
+                <!-- <source src="assets/videos/embassy-bg.webm" type="video/webm"> -->
+                Your browser doesn’t support embedded videos.
+              </video>
+            </div>
+
+            <div class="floating-card">
+              <div class="card-content">
+                <div class="icon">
+                  <i class="bi bi-headset"></i>
+                </div>
+                <div class="card-text">
+                  <h4>24/7 Emergency Assistance</h4>
+                  <p>Always here when you need us most</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="experience-badge">
+              <div class="badge-content">
+                <span class="years">80+</span>
+                <span class="text">Years of Diplomatic Service</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-    </section><!-- /Home About Section -->
+    </div>
+  </section>
+  <!-- /Home About Section -->
 
     <!-- Featured Services Section -->
-    <section id="featured-services" class="featured-services section">
+    <section id="featured-services" class="featured-services section" >
+      
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
